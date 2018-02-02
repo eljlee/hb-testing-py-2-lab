@@ -57,7 +57,7 @@ class PartyTestsDatabase(unittest.TestCase):
         """Test example data."""
         
         result = self.client.get("/games")
-        self.assertIn('Games', result.data)
+        self.assertIn('monopoly', result.data)
 
 
 if __name__ == "__main__":
